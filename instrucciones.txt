@@ -1,0 +1,36 @@
+
+Generar Tablas
+
+php artisan migrate
+
+Carga inicial
+php artisan db:seed --class=InitAppSeeder
+
+Crear Clase carga inicial
+php artisan make:seeder UsersTableSeeder
+
+Ejemplo crear tablas
+php artisan make:migration create_s_usuario_roles_table --create=s_usuario_roles
+
+Resetea tablas y borra contenido
+php artisan migrate:refresh
+
+Crear DAO Model
+php artisan make:model User
+
+php artisan make:controller PhotoController
+
+#############
+Pasos para iniciar desde cero en base de datos
+php artisan migrate:refresh
+php artisan db:seed --class=InitAppSeeder
+/*catalogo pesado*/
+php artisan db:seed --class=CatProdServicioSeeder
+php artisan db:seed --class=CatProdServicioSeeder2
+php artisan db:seed --class=CatProdServicioSeeder3
+php artisan db:seed --class=CatProdServicioSeeder4
+php artisan db:seed --class=CatProdServicioSeeder5
+
+Ejecutar Script Domicilio.sql
+Framework autocomplete
+npm install easy-autocomplete
